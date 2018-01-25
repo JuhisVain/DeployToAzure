@@ -9,7 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var about = require('./routes/about');
-var juho = require('.routes/juho');
+var juho = require('./routes/juho');
 
 var app = express();
 
