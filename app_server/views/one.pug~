@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1='header1 in one.pug'
+	p Paragraph in one.pug.
+	ul
+		each sfg in test1
+			li= sfg.ding
