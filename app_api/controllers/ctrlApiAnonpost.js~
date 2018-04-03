@@ -1,0 +1,17 @@
+const mongoose = require('mongoose');
+const anonpostModel = mongoose.model('anonpost');
+
+const anonpostList = function (req, res){
+	res
+		.status(200)
+		.json({"user" : "postdata"});
+};
+
+const addAnonpost = function (req, res){
+	res.status(201).json({"Add anonpost" : "work in progress"});
+};
+
+module.exports = {
+	anonpostList,
+	addAnonpost
+};

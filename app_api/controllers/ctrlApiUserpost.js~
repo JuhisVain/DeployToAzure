@@ -1,0 +1,17 @@
+const mongoose = require('mongoose');
+const userpostModel = mongoose.model('userpost');
+
+const userpostList = function (req, res){
+	res
+		.status(200)
+		.json({"user" : "postdata"});
+};
+
+const addUserpost = function (req, res){
+	res.status(201).json({"Add userpost" : "work in progress"});
+};
+
+module.exports = {
+	userpostList,
+	addUserpost
+};
