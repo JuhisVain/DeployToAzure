@@ -6,7 +6,7 @@ const anonpostList = function (req, res){
 		if (err){
 			res.status(404).json(err);
 		} else {
-			res.status(200).json(winners);
+			res.status(200).json(anonposts);
 		}
 	});
 };

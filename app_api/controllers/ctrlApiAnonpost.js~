@@ -2,13 +2,23 @@ const mongoose = require('mongoose');
 const anonpostModel = mongoose.model('anonpost');
 
 const anonpostList = function (req, res){
-	res
-		.status(200)
-		.json({"user" : "postdata"});
+	anonpostModel.find({}, function(err,anonposts){
+		if (err){
+			res.status(404).json(err);
+		} else {
+			res.status(200).json(anonposts);
+		}
+	});
 };
 
 const addAnonpost = function (req, res){
-	res.status(201).json({"Add anonpost" : "work in progress"});
+	anonpostModel.create(req.body, function(err, newAnonpost){
+		if (err){
+			res.status(400).json(err);
+		} else {
+			res.status(201).json(newAnonpost);
+		}
+	});
 };
 
 module.exports = {
