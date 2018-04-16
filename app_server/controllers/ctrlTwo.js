@@ -55,7 +55,7 @@ const wat = function(req, res){
 			} else if (!(body instanceof Array)){
 				res.render('error', {message: 'unexpectedf tesponse adta'});
 			} else if (!body.length){
-				res.render('errior', {message: 'No dovuymenty iun collentiop'});
+				res.render('error', {message: 'No dovuymenty iun collentiop'});
 			} else {
 				res.render('two', {user: body});
 			}
