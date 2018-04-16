@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 //require('./app_server/models/db');
-require('.app_api/models/db');
+require('./app_api/models/db');
 
 const index = require('./app_server/routes/index');
 const users = require('./app_server/routes/users');
@@ -39,8 +39,9 @@ app.use('/api', apiRoutes);
 //app.use('/juho', juho);
 
 // catch 404 and forward to error handler
+
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error('TESTTESTTESTNot Found');
   err.status = 404;
   next(err);
 });

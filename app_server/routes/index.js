@@ -10,4 +10,9 @@ router.get('/', ctrlMain.index);
 router.get('/one', ctrlOne.test1);
 router.get('/two', ctrlTwo.wat);
 
+router
+	.route('/two/add')
+	.get(ctrlTwo.showForm)
+	.post(ctrlTwo.addData)
+
 module.exports = router;

@@ -5,6 +5,6 @@ block content
 	p para in two.pug
 	ul
 		each thingy in user
-			li=thingy.user + ' : ' + thingy.postdata
+			li=thingy.index + ' : ' + thingy.number
 	a(href='/two/add') Add new data
 	

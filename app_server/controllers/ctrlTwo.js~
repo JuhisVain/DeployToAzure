@@ -9,8 +9,8 @@ const addData = function(req,res){
 	const path = '/api/anonpost';
 	
 	const postdata = {
-		user: req.body.user,
-		postdata: req.body.postdata
+		year: req.body.year,
+		team: req.body.team
 	};
 	
 	const requestOptions = {
